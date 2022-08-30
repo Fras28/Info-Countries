@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
+.loguito{
+    cursor:pointer;
+    margin-right: auto;
+}
+span{
+  margin: auto;
+}
+.addBn{
+  margin-bottom: 8px;
+}
+
+.bigNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border-radius: 0 0 3% 3%;
+    border-bottom: solid #ffbf0088;
+    margin-top: 0%;
+    position: fixed; 
+    width: 100%; 
+    top: 0;
+   /*top: 0;
+   height: 8%;*/
+}
+
+.nav_buttons{
+    list-style: none;
+    margin-right: 0;
+ 
+}
+.nav_buttons li{
+    display: inline-block;
+    padding: 0% 20px;
+}
+
+/* From uiverse.io by @adamgiebl */
+.btNAV {
+  min-height: 25px;
+  max-width: 150px;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background: #ad5389;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+
+   }
+   
+   .btNAV svg {
+    margin-right: 3px;
+    margin-top: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+   }
+   
+   .btNAV span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+   }
+   
+   .btNAV:hover svg {
+    transform: translateX(5px) rotate(90deg);
+   }
+   
+   .btNAV:hover span {
+    transform: translateX(7px);
+   }
+   .input-group {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .input {
+    min-height: 25px;
+    max-width: 150px;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #5e4dcd;
+    border-radius: 6px 0 0 6px;
+    background-color:  #24252a;
+    margin-top: 25px;
+  }
+  /*-----------------ADD ACTIVITY ---------- */
+  .inputable {
+    min-height: 50px;
+    max-width: 150px;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #5e4dcd;
+    border-radius: 6px 6px 6px 6px;
+    background-color:  #24252a;
+    margin-bottom: .5rem;
+  }
+  .errorF{
+    color: red;
+    font-weight:400;
+  }
+  .difImp{
+    margin-bottom: 1.5rem;
+  }
+  .tittleInp{
+   margin-bottom: 0;
+   color: #fff;
+  }
+  .containerC{
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    margin: auto;
+    display: inline-block;
+    padding: 20px 50px 50px 50px ;
+    border-radius: 0 0 8px 8px ;
+  }
+
+  .button--submit {
+    min-height: 25px;
+    max-width: 150px;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+    margin-top: 25px;
+  }
+  
+  .button--submit:hover {
+    background-color: #5e5dcd;
+  }
+  
+  .input:focus, .input:focus-visible {
+    border-color: #3898EC;
+    outline: none;
+  }
+  .btLanding{
+    margin: auto;
+  }
+  .logo{
+    max-height: 10%;
+  }
+  .card-search{
+    background-color: #ffffff;
+    padding: 0rem 2rem 2rem 2rem;
+    border-radius: 10% ;
+    border:solid  #5e4dcd ;
+    margin-left: 1rem;
+    margin-bottom: 1.3rem;
+  }
+  .searchT{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    margin-bottom: .2rem;
+    border-bottom: solid #5e4dcd;
+  }
+  .findtext{
+   font-size: small;
+   
+  }

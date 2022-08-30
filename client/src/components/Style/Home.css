@@ -1,0 +1,361 @@
+/*@font-face {
+    font-family:blackOne;
+    src: url(BlackOpsOne-Regular.ttf);
+}*/
+h1{
+    font-family: blackOne;
+    color: rgb(192, 11, 92);
+    background-image: url='GU.png';
+}
+.fWorld{
+    margin-top: 25%;
+
+}
+
+
+.carta{
+    max-width: 65%;
+    text-decoration-line: none;
+    margin: auto;
+    border: 1px solig rgba(255, 255, 255, 0.18);
+    border-radius: 30px;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.container{
+    margin: auto;
+   
+}
+body{
+    display: flexbox;
+    background-image: url("../Assets/Clima.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 6%;
+}
+.btPag{
+    margin: .2rem;
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius:20%;
+    background: #ad5389;
+    background: linear-gradient(to right, #2a2272, #3428b9, #1f1f73);
+    color: ghostwhite;
+    overflow: hidden;
+    margin-bottom: 10%;
+    height: 2rem;
+    width: 2rem;
+}
+.btPag:hover{
+    border-radius:50%;
+}
+img{
+    max-width: 10rem;
+    border-radius: 15px;
+     margin: auto;
+}
+.imgCard{
+    max-width:160px ;
+    max-height: 80px;
+    object-fit: contain ;
+}
+/*.container{
+    display: grid;
+    grid-template-columns: [lineal] 1fr [col-2] 1fr [line3-inicio] 1fr [col-final];
+    grid-template-rows: [fila-1] 1fr [middle] 1fr [row-end];
+}*/
+.btn{
+    margin: 1em;
+}
+
+/* From uiverse.io by @Z-C-Code */
+@keyframes square-animation {
+    0% {
+     left: 0;
+     top: 0;
+    }
+   
+    10.5% {
+     left: 0;
+     top: 0;
+    }
+   
+    12.5% {
+     left: 32px;
+     top: 0;
+    }
+   
+    23% {
+     left: 32px;
+     top: 0;
+    }
+   
+    25% {
+     left: 64px;
+     top: 0;
+    }
+   
+    35.5% {
+     left: 64px;
+     top: 0;
+    }
+   
+    37.5% {
+     left: 64px;
+     top: 32px;
+    }
+   
+    48% {
+     left: 64px;
+     top: 32px;
+    }
+   
+    50% {
+     left: 32px;
+     top: 32px;
+    }
+   
+    60.5% {
+     left: 32px;
+     top: 32px;
+    }
+   
+    62.5% {
+     left: 32px;
+     top: 64px;
+    }
+   
+    73% {
+     left: 32px;
+     top: 64px;
+    }
+   
+    75% {
+     left: 0;
+     top: 64px;
+    }
+   
+    85.5% {
+     left: 0;
+     top: 64px;
+    }
+   
+    87.5% {
+     left: 0;
+     top: 32px;
+    }
+   
+    98% {
+     left: 0;
+     top: 32px;
+    }
+   
+    100% {
+     left: 0;
+     top: 0;
+    }
+   }
+   
+   .loader {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    transform: rotate(45deg);
+    margin:auto;
+    margin-top: 5rem;
+   }
+   
+   .loader-square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    margin: 2px;
+    border-radius: 0px;
+    background: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: square-animation 10s ease-in-out infinite both;
+   }
+   
+   .loader-square:nth-of-type(0) {
+    animation-delay: 0s;
+   }
+   
+   .loader-square:nth-of-type(1) {
+    animation-delay: -1.4285714286s;
+   }
+   
+   .loader-square:nth-of-type(2) {
+    animation-delay: -2.8571428571s;
+   }
+   
+   .loader-square:nth-of-type(3) {
+    animation-delay: -4.2857142857s;
+   }
+   
+   .loader-square:nth-of-type(4) {
+    animation-delay: -5.7142857143s;
+   }
+   
+   .loader-square:nth-of-type(5) {
+    animation-delay: -7.1428571429s;
+   }
+   
+   .loader-square:nth-of-type(6) {
+    animation-delay: -8.5714285714s;
+   }
+   
+   .loader-square:nth-of-type(7) {
+    animation-delay: -10s;
+   }
+   .btPag{
+      margin-top: 1rem;
+   }
+ .cart{
+    margin-top: 2rem;
+ }
+ .inputable{
+    border-radius: 20%;
+ }
+
+
+
+ /* From uiverse.io by @menezes11 */
+.btnL {
+    position: relative;
+    padding: 1em 1.8em;
+    outline: none;
+    border: 1px solid #303030;
+    background: #212121;
+    color: #ae00ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+   }
+   
+   .btnL:hover {
+    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+    transition-delay: 0.6s;
+   }
+   
+   .btnL span {
+    position: absolute;
+   }
+   
+   .btnL span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ae00ff);
+   }
+   
+   .btnL:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.7s;
+   }
+   
+   .btnL span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #001eff);
+   }
+   
+   .btnL:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+   }
+   
+   .btnL span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ae00ff);
+   }
+   
+   .btnL:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+   }
+   
+   .btnL span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #001eff);
+   }
+   
+   .btnL:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+   }
+   
+   .btnL:active {
+    background: #ae00af;
+    background: linear-gradient(to top right, #ae00af, #001eff);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+    transition: 0.1s;
+   }
+   
+   .btnL:active span:nth-child(1) 
+   span:nth-child(2) 
+   span:nth-child(2) 
+   span:nth-child(2) {
+    transition: none;
+    transition-delay: none;
+   }
+   .landing{
+    width: 190px;
+    height: 200px;
+    background: transparent;
+    border: 2px solid #6a07ff;
+    border-radius: 50%;
+    box-shadow: 2px 2px 15px #000000 inset;
+    text-align: center;
+    color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 25%;
+    
+  }
+  
+  .landing:hover {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.767), rgba(24, 23, 23, 0));
+      -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+    box-shadow: 2px 2px 15px #6a07ff inset;
+    background-color: transparent;
+  }
