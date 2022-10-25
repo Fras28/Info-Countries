@@ -7,6 +7,7 @@ import {
   SORT_COUNTRY,
   FILT_CONTINENTE,
   FILT_ACTIV,
+  GET_AREA
 } from "./action";
 const initialState = {
   countrys: [],
@@ -34,7 +35,7 @@ const rootReducer = (state = initialState, { type, payload }) => {
       return {
         ...state,
         searchC:
-          payload.length >= 0 ? payload : [{ name: "Country n/a", cca3:"" }],
+          payload.length > 0 ? payload : [{ name: "Country n/a"}],
       };
     case SEARCH_CLEANER:
       return {
@@ -47,7 +48,7 @@ const rootReducer = (state = initialState, { type, payload }) => {
       };
     //-------ZORT -------------
     case SORT_COUNTRY:
-      console.log(state.countrys);
+
       const zort =
         payload === "A-Z"
           ? state.countrys.sort(function (a, b) {
@@ -106,7 +107,6 @@ const rootReducer = (state = initialState, { type, payload }) => {
     //-----------------------
     case FILT_ACTIV:
       let activ = [];
-      console.log(payload)
       payload === "noA"
         ? activ = copiaCountrys.filter((e) => e.activities.length === 0)
         : payload === "act"
@@ -118,7 +118,13 @@ const rootReducer = (state = initialState, { type, payload }) => {
         countrys: activ,
       };
     //-------------------
-
+      case GET_AREA:
+        console.log(payload ,"acaaaa")
+        let areaC = payload.filter(e=> e.area <= 50000)
+        return{
+          ...state,
+          countrys:areaC,
+        };
     default:
       return { ...state };
   }

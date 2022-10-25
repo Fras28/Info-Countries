@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import { Route } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Paginado from "./Paginado";
-import { byActiv, byContinent, getAllCountrys, orden} from "../redux/action";
+import { Area, byActiv, byContinent, getAllCountrys, orden} from "../redux/action";
 import LOGO from './Assets/world.gif'
 import Footer from "./Footer.jsx"
 
@@ -53,26 +53,35 @@ let allCountrys = useSelector(state =>state.countrys);
           dispatch(getAllCountrys())
          },[dispatch])
          //--------------sort ------------
+          function area(e){
+            e.preventDefault(e);
+            dispatch(Area())
+
+          }
   return(
       <div path="/Home" className="cointainerH">
          <Route strict path="/Home" component={Nav} />
-         <div>
+         <div className="divSort">
          <select className="input" onChange={e=>zort(e)}>
-          <option value="neutro">Sort by</option>
+          <option hidden disabled selected value>Sort by</option>
           <option value="-pop">-Population</option>
           <option value="+pop">+Population</option>
           <option value="A-Z">A-Z</option>
           <option value="Z-A">Z-A</option>
         </select>
         <select className="input"  onChange={conti}>
+          
+          <option hidden disabled selected value>Order continent</option>
           <option name="All">All Continents</option>
           {continents.map(e => <option name={e}>{e}</option>)}
         </select>
        <select className="input" onChange={filtActiv}>
-       <option value="all">All Countrys</option>
+        <option hidden disabled selected value>Filt Activity</option>
+       <option value="all">All Countries</option>
         <option value="noA">NO Activitys</option>
         <option value="act">With Acticitys</option>
        </select>
+       <button onClick={area} className="input">Area-50k</button>
          </div>
             {allCountrys?.length === 0?
          <img className="loguito" src={LOGO} alt="logo" max-height="30%"></img>:

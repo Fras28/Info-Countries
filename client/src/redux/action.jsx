@@ -8,6 +8,7 @@ export const SORT_COUNTRY_POPULATION = "SORT_COUNTRY_POPULATION";
 export const POST_ACTIVITY = "POST_ACTIVITY";
 export const FILT_CONTINENTE = "FILT_CONTINENTE";
 export const FILT_ACTIV = "FILT_ACTIV";
+export const GET_AREA = "GET_AREA";
 
 export const getAllCountrys = () => {
   return async function (dispatch) {
@@ -51,18 +52,18 @@ export function orden(payload) {
     payload: payload,
   };
 }
-export function byContinent(payload){
-  return{
-    type:FILT_CONTINENTE,
-    payload:payload,
-  }
+export function byContinent(payload) {
+  return {
+    type: FILT_CONTINENTE,
+    payload: payload,
+  };
 }
-export function byActiv(payload){
-  console.log(payload)
-  return{
-    type:FILT_ACTIV,
-    payload:payload,
-  }
+export function byActiv(payload) {
+  console.log(payload);
+  return {
+    type: FILT_ACTIV,
+    payload: payload,
+  };
 }
 
 export const addActivity = (INFO) => {
@@ -71,9 +72,25 @@ export const addActivity = (INFO) => {
       "http://localhost:3001/countrys/addactivity",
       INFO
     );
-    return dispatch({
-      type: POST_ACTIVITY,
-      payload: response.data,
-    });
+    console.log(response.status);
+    if (response.status === 200) {
+      alert("Actividad agregada con exito!");
+      dispatch({
+        type: POST_ACTIVITY,
+        payload: response.data,
+      });
+    } else {
+      console.log("aaaacaaaaaaa");
+      alert(response.data);
+    }
   };
 };
+
+export const Area = ()=>{
+  return async function (dispatch) {
+    return fetch("http://localhost:3001/countrys")
+      .then((res) => res.json())
+      .then((res_json) => {
+        dispatch({ type: GET_AREA, payload: res_json });
+      });
+  }};

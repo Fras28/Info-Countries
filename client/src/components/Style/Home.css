@@ -31,12 +31,14 @@ h1{
 }
 .container{
     margin: auto;
-   
+
 }
+
 body{
     display: flexbox;
-    background-image: url("../Assets/Clima.jpg");
+    background-image: url("../Assets/MapBlack.jpg");
     background-position: center;
+    background-position-y: 30% ;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -54,7 +56,7 @@ body{
     background: linear-gradient(to right, #2a2272, #3428b9, #1f1f73);
     color: ghostwhite;
     overflow: hidden;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     height: 2rem;
     width: 2rem;
 }
@@ -67,9 +69,12 @@ img{
      margin: auto;
 }
 .imgCard{
-    max-width:160px ;
+    max-width:120px ;
     max-height: 80px;
     object-fit: contain ;
+}
+.divAddC{
+    margin-bottom: 1rem;
 }
 /*.container{
     display: grid;
@@ -228,6 +233,7 @@ img{
    }
  .cart{
     margin-top: 2rem;
+    margin-bottom: 2rem;
  }
  .inputable{
     border-radius: 20%;
@@ -358,4 +364,19 @@ img{
     color: #ffffff;
     box-shadow: 2px 2px 15px #6a07ff inset;
     background-color: transparent;
+  }
+  .cruz{
+    background-color: rgb(193, 4, 4);
+    color: white;
+    border-radius: 30%;
+    padding: 0.1rem;
+    margin-left: 1rem;
+  }
+  .countryAdd{
+    padding: 0;
+    border-radius: 20px;
+    background-color: #733ec1;
+    color:white;
+    font-weight: 500;
+    margin-bottom: .2rem;
   }

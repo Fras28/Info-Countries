@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector} from "react-redux";
 import  { Route, useParams } from "react-router-dom";
-import { getAllCountrys, getDetail } from "../redux/action";
+import { getDetail } from "../redux/action";
 import Nav from "./Nav";
 import "./Style/Detail.css"
 import Footer from "./Footer.jsx"
@@ -12,10 +12,10 @@ export default function Detalles (){
     useEffect(() => {
       dispatch(getDetail(id));
     }, [dispatch, id]);
-   const {flags,name,capital,continents,cca3,subregion,area,population,activities}= useSelector(state=> state.detail);
+   const {flags,name,capital,continents,cca3,subregion,area,population,activities,idioma}= useSelector(state=> state.detail);
 
     return(
-       <div >
+       <div className="DetailCol">
             <Route strict path="/Home" component={Nav} />
             <div className="contD">
        <div >
@@ -36,7 +36,7 @@ export default function Detalles (){
             <li><b>Dificultad:</b><p className="pd">{e.difficulty}</p></li>
             <li><b>Duration:</b><p className="pd">{e.duration}HS</p></li>
             <li><b>Season:</b><p className="pd">{e.season}</p></li>
-
+            <li><b>Idioma:</b><p className="pd">{e.idioma}</p></li>
             </ul>
           </div>
           )}

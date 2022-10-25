@@ -17,6 +17,13 @@ export default function Footer() {
         <a className="links" Target="_blank" href="mailto:fselvarolo28@gmail.com">
          <b>Fselvarolo@gmail.com</b> 
         </a>
+        <a
+          className="links"
+          href="https://github.com/Fras28/AllCountries"
+          Target="_blank"
+        >
+         <b>GitHub😺</b> 
+        </a>
       </footer>
     </div>
   );

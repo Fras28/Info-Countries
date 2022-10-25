@@ -2,7 +2,7 @@
   width: 190px;
   height: 200px;
   background: transparent;
-  border: 2px solid #6a07ff;
+  outline: 2px groove #ffffff;
   border-radius: 7px;
   box-shadow: 2px 2px 15px #000000 inset;
   text-align: center;
@@ -15,12 +15,15 @@
 }
 
 .card:hover {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.767), rgba(24, 23, 23, 0));
+ 
+  /*background: linear-gradient(135deg, rgba(0, 0, 0, 0.767), rgba(24, 23, 23, 0));
     -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);*/
+  
   color: #ffffff;
-  box-shadow: 2px 2px 15px #6a07ff inset;
-  background-color: transparent;
+  box-shadow: 2px 2px 15px #4d91d6 inset;
+  /*background-color: transparent;*/
   border-radius: 50%;
+  outline: 10px solid #33689D;
 }
 
