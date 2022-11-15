@@ -12,17 +12,21 @@ export default function Footer() {
           href="https://www.linkedin.com/in/francoselvarolo/"
           Target="_blank"
         >
-         <b>My Linkdin</b> 
+          <b>My Linkdin</b>
         </a>
-        <a className="links" Target="_blank" href="mailto:fselvarolo28@gmail.com">
-         <b>Fselvarolo@gmail.com</b> 
+        <a
+          className="links"
+          Target="_blank"
+          href="mailto:fselvarolo28@gmail.com"
+        >
+          <b>Fselvarolo@gmail.com</b>
         </a>
         <a
           className="links"
           href="https://github.com/Fras28/AllCountries"
           Target="_blank"
         >
-         <b>GitHub😺</b> 
+          <b>GitHub😺</b>
         </a>
       </footer>
     </div>
